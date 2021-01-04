@@ -4,6 +4,46 @@
   box-sizing: border-box;
 }
 
+.wrap {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1170px;
+}
+
+.nazione-dischi {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #272727;
+}
+
+.nazione-dischi h1 {
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100% / 5 - 10px);
+  background-color: white;
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 1%;
+}
+
+.card img {
+  padding: 5px;
+  width: 100%;
+}
+
 .header {
   background-color: black;
 }

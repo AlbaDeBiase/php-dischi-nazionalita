@@ -3,23 +3,27 @@
 
 @section('content')
 
-<div class="container">
-    <div class="dischi-container">
-        <div class="card-dischi">
+<div class="wrap">
+    <div class="nazione-dischi">
+        <div class="container">
             @foreach ($nazioni as $nazione_artista => $nazione)
                 <h1>{{$nazione_artista}}</h1>
-                @foreach ($nazione as $paese)
-                    <p>{{$paese['artista']}}</p>
-                    <p>{{$paese['genere']}}</p>
-                    <p>{{$paese['titolo']}}</p>
-                    <p>{{$paese['anno']}}</p>
-                    <p>{{$paese['numero_tracce']}}</p>
+                    <div class="card-container">
+                        @foreach ($nazione as $paese)
+                            <div class="card">
+                                <img src="https://img.mercatinomusicale.com/p_z/40/06/4240640_1437163310.jpg" alt="">
+                                <h3>{{$paese['titolo']}}</h3>
+                                <h4>{{$paese['artista']}}</h4>
+                                <p>{{$paese['genere']}}</p>
+                                <p>{{$paese['anno']}}</p>
+                                <p>{{$paese['numero_tracce']}}</p>
+                            </div>
+                        @endforeach
+                    </div>
                 @endforeach
-            @endforeach
         </div>
     </div>
 </div>
-
 
 
 

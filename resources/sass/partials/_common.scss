@@ -3,3 +3,47 @@
     padding:0;
     box-sizing: border-box;
 }
+
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap{
+    background-color: $background_wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 1170px;
+
+}
+
+.nazione-dischi {
+    @include flex;
+    background-color: #272727;
+        h1{
+
+            color: white;
+
+    }
+
+}
+
+.card-container{
+    @include flex;
+}
+
+.card{
+    width: calc(100% / 5 - 10px);
+    background-color: $background_card;
+    color: $color_card;
+    margin: 5px;
+    padding: 10px;
+    border-radius:1%;
+
+        img{
+        padding: 5px;
+        width: 100%;
+    }
+}
