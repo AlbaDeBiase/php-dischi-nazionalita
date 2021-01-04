@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.logo h1 {
+  color: white;
+  padding: 10px;
+}
+
+.menu-header ul {
+  text-align: center;
+  padding: 20px;
+}
+
+.menu-header ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.menu-header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
